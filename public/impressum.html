@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@1.21.0/dist/full.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@1.21.0/dist/themes.css" rel="stylesheet" type="text/css" />
+</head>
+<body >
+    <select data-choose-theme class="select select-bordered max-w-xs">
+    <option value="light">Default</option>
+    <option value="dark">Dark</option>
+  </select>
+  <div class="rounded-lg  bg-slate-700 drawer h-52">
+    <input id="my-drawer-3" type="checkbox" class="drawer-toggle"> 
+    <div class="flex flex-col drawer-content">
+      <div class="navbar bg-slate-800">
+        <div class="flex-none lg:hidden">
+          <label for="my-drawer-3" class="btn btn-square btn-ghost">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </label>
+        </div> 
+        <div class="flex-1 px-2 mx-2">
+        </div> 
+        <div class="flex-none hidden lg:block">
+          <ul class="menu horizontal">
+            <li>
+              <a class="btn btn-ghost btn-sm rounded-btn" href="startseite.html"> Home </a>
+              <a class="btn btn-ghost btn-sm rounded-btn" href="talk.html"> Talk </a>
+              <a class="btn btn-ghost btn-sm rounded-btn" href="mitglieder.html">Mitglieder</a>
+              <a class="btn btn-ghost btn-sm rounded-btn" href="contact.html">Ausbildung</a>
+              <a class="btn btn-ghost btn-sm rounded-btn" href="impressum.html">Impressum</a>
+              <a class="btn btn-ghost btn-sm rounded-btn" href="contact.html">Logout</a> 
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div> 
+    <div class="drawer-side overflow-y-hidden">
+      <label for="my-drawer-3" class="drawer-overlay"></label> 
+      <ul class="p-4 overflow-y-hidden menu w-80 bg-slate-100">
+        <li>
+            <a class="btn btn-ghost btn-sm rounded-btn" href="startseite.html"> Home </a>
+            <a class="btn btn-ghost btn-sm rounded-btn" href="talk.html"> Talk </a>
+            <a class="btn btn-ghost btn-sm rounded-btn" href="mitglieder.html">Mitglieder</a>
+            <a class="btn btn-ghost btn-sm rounded-btn" href="contact.html">Ausbildung</a>
+            <a class="btn btn-ghost btn-sm rounded-btn" href="contact.html">Impressum</a>
+            <a class="btn btn-ghost btn-sm rounded-btn" href="contact.html">Logout</a> 
+          </li>
+      </ul>
+    </div>
+  </div>
+    <h1 class="text-center text-3xl"> Impressum</h1>
+    <p class="text-center text-m">
+        Inhaber: <br>
+        Robyn Flüshöh <br>
+        Birkenstr 28 <br>
+        58099 <br>
+    </p>
+    <p class="mt-4 text-center text-m ">  
+        Hilfe: <br>
+        Crafter-y <br>
+        Crafter-y.de
+    </p>          
+</body>
+</header> 
+</html>
+<script src="https://cdn.jsdelivr.net/npm/theme-change@2.0.2/index.js"></script>
